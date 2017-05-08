@@ -4,7 +4,7 @@
 # Authors: Yitian Jia <ytjia.zju@gmail.com>
 
 
-import time_util
+from utils_py import time_util
 
 
 class TimeRange:

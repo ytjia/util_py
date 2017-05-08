@@ -3,8 +3,8 @@
 
 # Authors: Yitian Jia <jiayitian@didichuxing.com>
 
-import const
-import time_util
+from utils_py import const
+from utils_py import time_util
 
 
 def gen_slide_seg_list(mm_begin, mm_end, seg_duration, slide_step):
@@ -18,7 +18,7 @@ def gen_slide_seg_list(mm_begin, mm_end, seg_duration, slide_step):
     """
     seg_begin_list = [i for i in
                       range(mm_begin, mm_end - seg_duration + 1, slide_step)]
-    seg_list = map(time_util.minutes_to_time_str, seg_begin_list)
+    seg_list = list(map(time_util.minutes_to_time_str, seg_begin_list))
     return seg_list
 
 

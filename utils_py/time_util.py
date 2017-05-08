@@ -91,7 +91,7 @@ def minutes_to_time_str(mm_of_day):
     :param mm_of_day: 一天中第x分钟
     :return: hh:mm:ss格式的字符串
     """
-    hour = mm_of_day / 60
+    hour = mm_of_day // 60
     minute = mm_of_day % 60
     return '{:0>2}:{:0>2}:{:0>2}'.format(hour, minute, 0)
 
