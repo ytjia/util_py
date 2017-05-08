@@ -4,9 +4,6 @@
 # Authors: Yitian Jia <ytjia.zju@gmail.com>
 
 
-import sys
-
-
 def class_check_para(**kw):
     """
     force check accept and return,
@@ -23,30 +20,26 @@ def class_check_para(**kw):
                     if arg_types != kw["accepts"]:
                         msg = decorator_info(f.__name__, kw["accepts"],
                                              arg_types, 0)
-                        print >> sys.stderr, 'TypeWarning: ', msg
-                        if "mail" in kw:
-                            kw["mail"].do_warn(msg)
-                        raise TypeError, msg
+                        print('TypeWarning: ', msg)
+                        raise TypeError(msg)
                 result = f(*args)
                 if "returns" in kw:
                     res_type = type(result)
                     if res_type != kw["returns"]:
                         msg = decorator_info(f.__name__, (kw["returns"],),
                                              (res_type,), 1)
-                        print >> sys.stderr, 'TypeWarning: ', msg
-                        if "mail" in kw:
-                            kw["mail"].do_warn(msg)
-                        raise TypeError, msg
+                        print('TypeWarning: ', msg)
+                        raise TypeError(msg)
                 return result
 
             new_f.__name__ = f.__name__
             return new_f
 
         return decorator
-    except KeyError, key:
-        raise KeyError, str(key) + "is not a valid keyword argument"
-    except TypeError, msg:
-        raise TypeError, msg
+    except KeyError as ke:
+        raise KeyError(ke.message + "is not a valid keyword argument")
+    except TypeError as te:
+        raise TypeError(te.message)
 
 
 def decorator_info(f_name, expected, actual, flag):
