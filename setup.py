@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Authors: Yitian Jia <ytjia.zju@gmail.com>
+# Authors: Y. Jia <ytjia.zju@gmail.com>
 
 try:
     from setuptools import setup
@@ -38,7 +38,7 @@ settings.update(
             'Topic :: Utilities',
         ],
         keywords='python utility',
-        url='https://github.com/ytjia/utils_py',
+        url='https://github.com/ytjia/utils-py',
         author='Y. Jia',
         author_email='ytjia.zju@gmail.com',
         license='Apache 2.0',

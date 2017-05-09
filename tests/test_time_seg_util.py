@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+# Authors: Y. Jia <ytjia.zju@gmail.com>
+
 import unittest
 
 from utils_py import const

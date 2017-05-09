@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Authors: Yitian Jia <ytjia.zju@gmail.com>
+# Authors: Y. Jia <ytjia.zju@gmail.com>
 
 
 def almost_eq(a, b, threshold=0.000001):

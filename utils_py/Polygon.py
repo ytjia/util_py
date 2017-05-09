@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Authors: Yitian Jia <ytjia.zju@gmail.com>
+# Authors: Y. Jia <ytjia.zju@gmail.com>
 
 from utils_py.Point import Point
 

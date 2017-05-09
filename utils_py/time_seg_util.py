@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Authors: Yitian Jia <jiayitian@didichuxing.com>
+# Authors: Y. Jia <ytjia.zju@gmail.com>
 
 from utils_py import const
 from utils_py import time_util
