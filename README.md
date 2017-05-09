@@ -1,2 +1,5 @@
-# utils_py [![Build Status](https://travis-ci.org/ytjia/utils_py.svg?branch=master)](https://travis-ci.org/ytjia/utils_py)
+# utils_py 
+
+[![PyPI version](https://badge.fury.io/py/utils-py.svg)](https://badge.fury.io/py/utils-py)
+[![Build Status](https://travis-ci.org/ytjia/utils_py.svg?branch=master)](https://travis-ci.org/ytjia/utils_py)
 

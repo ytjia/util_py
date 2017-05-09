@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- math_util 数学常用函数
+- Point、Polygon地理相关class
 
 ## [0.2.0] - 2017-05-08
 ### Added
