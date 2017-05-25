@@ -31,7 +31,7 @@ def is_in_polygon(point, polygon):
 def polygon_trans(p):
     """
 
-    :param p: polygon list with dict("lat: v1, "lng": v2) as elements
+    :param p: polygon list with dict("lat": v1, "lng": v2) as elements
     :return: polygon list with (v_lat, v_lng) as elements
     """
     new_p = []
