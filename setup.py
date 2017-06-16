@@ -28,13 +28,14 @@ def requirements():
 
 settings.update(
         name='utils_py',
-        version='0.2.0',
+        version='0.3.0',
         description='Utility package for python',
         long_description=readme(),
         classifiers=[
             'Intended Audience :: Developers',
             'License :: OSI Approved :: Apache Software License',
             'Programming Language :: Python :: 2.7',
+            'Programming Language :: Python :: 3.6',
             'Topic :: Utilities',
         ],
         keywords='python utility',
